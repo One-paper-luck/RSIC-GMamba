@@ -205,4 +205,4 @@ dependencies:
     - zipp==3.17.0
     - zope-interface==6.2
     - zstandard==0.22.0
-prefix: /home/dmd/anaconda3/envs/rssm
+prefix: /home/dmd/anaconda3/envs/gmamba
