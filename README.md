@@ -5,12 +5,13 @@
 </p>
 
 ## Installation and Dependencies
-Please [Vim](https://github.com/hustvl/Vim)
 Create the `gmamba` conda environment using the `environment.yml` file:
 ```
 conda env create -f environment.yml
 conda activate gmamba
 ```
+
+Please refer to [Vim](https://github.com/hustvl/Vim)
 
 **Issue:** iter(dataloader) typeerror:'generator' object is not callable
 
