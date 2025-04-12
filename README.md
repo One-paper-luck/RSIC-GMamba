@@ -10,6 +10,27 @@ Create the `gmamba` conda environment using the `environment.yml` file:
 conda env create -f environment.yml
 conda activate gmamba
 ```
+
+## Some Issues
+Issue 1: iter(dataloader) typeerror:'generator' object is not callable
+
+Solution: cd /home/dmd/anaconda3/envs/gmamba/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py
+
+Modify the _MapDatasetFetcher function as follows:
+```
+class _MapDatasetFetcher(_BaseDataSetFetcher):
+    def fetch(self, possibly_batched_index):
+        if self.auto_collation:
+            data = [self.dataset[idx] for idx in possibly_batched_index]
+        else:
+            data = self.dataset[possibly_batched_index]
+        return self.collate_fn(data)
+ ```       
+    
+
+        
+
+
 ## Data preparation
 For the evaluation metrics, Please download the [evaluation.zip](https://pan.baidu.com/s/13ZfH-CMYbW3RsW0-RX7KKQ)(BaiduPan code:wuiu) and extract it to `./evaluation`.
 
