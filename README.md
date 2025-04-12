@@ -5,15 +5,16 @@
 </p>
 
 ## Installation and Dependencies
+Please [Vim](https://github.com/hustvl/Vim)
 Create the `gmamba` conda environment using the `environment.yml` file:
 ```
 conda env create -f environment.yml
 conda activate gmamba
 ```
 
-## Some Issues
-**Issue 1:** iter(dataloader) typeerror:'generator' object is not callable
+**Issue:** iter(dataloader) typeerror:'generator' object is not callable
 **Solution:** cd /home/dmd/anaconda3/envs/gmamba/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py
+
 `Modify the _MapDatasetFetcher function as follows:`
 ```
 class _MapDatasetFetcher(_BaseDataSetFetcher):
@@ -24,8 +25,6 @@ class _MapDatasetFetcher(_BaseDataSetFetcher):
             data = self.dataset[possibly_batched_index]
         return self.collate_fn(data)
  ```       
-    
-
         
 
 
@@ -65,3 +64,5 @@ python test.py
 ## Reference:
 1. https://github.com/tylin/coco-caption
 2. https://github.com/aimagelab/meshed-memory-transformer
+3. https://github.com/hustvl/Vim
+4. https://github.com/alxndrTL/mamba.py
