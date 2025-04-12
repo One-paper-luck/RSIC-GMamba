@@ -50,15 +50,15 @@ python test.py
 
 # Citation:
 ```
-@ARTICLE{,
+@ARTICLE{10915627,
   author={Meng, Lingwu and Wang, Jing and Xiao, Liang},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
   title={A Multiscale Grouping Transformer with CLIP Latents for Remote Sensing Image Captioning}, 
   year={2025},
-  volume={},
+  volume={63},
   number={},
-  pages={},
-  doi={}}
+  pages={1-16},
+  doi={10.1109/TGRS.2025.3548664}}
 ```
 
 
