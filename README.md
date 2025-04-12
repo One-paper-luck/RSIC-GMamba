@@ -13,7 +13,9 @@ conda activate gmamba
 ```
 
 **Issue:** iter(dataloader) typeerror:'generator' object is not callable
-**Solution:** cd /home/dmd/anaconda3/envs/gmamba/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py
+
+**Solution:** 
+cd /home/dmd/anaconda3/envs/gmamba/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py
 
 `Modify the _MapDatasetFetcher function as follows:`
 ```
