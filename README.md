@@ -53,7 +53,7 @@ python test.py
 @ARTICLE{10915627,
   author={Meng, Lingwu and Wang, Jing and Xiao, Liang},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={A Multiscale Grouping Transformer with CLIP Latents for Remote Sensing Image Captioning}, 
+  title={RSIC-GMamba: A State-Space Model With Genetic Operations for Remote Sensing Image Captioning}, 
   year={2025},
   volume={63},
   number={},
