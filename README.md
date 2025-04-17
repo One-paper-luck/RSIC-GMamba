@@ -37,7 +37,7 @@ For the evaluation metrics, Please download the [evaluation.zip](https://pan.bai
 
 For CLIP Feature Extraction:  Please refer to [pre_CLIP_feature](https://github.com/One-paper-luck/MG-Transformer/blob/main/feature_pro/pre_CLIP_feature.py) 
 
-CLIP feature shape is 50x768.
+Each CLIP feature shape is 50x768.
 
 ## Train
 ```
